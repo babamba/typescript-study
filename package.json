@@ -5,12 +5,17 @@
   "license": "MIT",
   "dependencies": {
     "@types/lodash": "^4.14.161",
+    "@types/node": "^14.14.2",
+    "chalk": "^4.1.0",
     "global": "^4.4.0",
     "lodash": "^4.17.20",
+    "nodemon": "^2.0.6",
     "ts-node": "^9.0.0",
     "typescript": "^4.0.3"
   },
   "scripts": {
+    "start": "nodemon --watch '*.ts' --exec 'ts-node' src/ToyInput/index.ts",
+    "build": "tsc src/ToyInput/*.ts",
     "ts-start": "ts-node src/1.ts"
   }
 }
